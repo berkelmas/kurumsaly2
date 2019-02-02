@@ -1,0 +1,83 @@
+{% load static %}
+
+{% include 'kurumsalysite/components/header.html' %}
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url('{% static 'kurumsalysite/img/faqresim.jpg' %}')">
+        <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #989898 0%, #4c8bb1 100%);"></div>
+
+       <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white" class="fw-200 mb-6">Sık Sorulan Sorular</h1>
+            <p style="color : white;" class="lead-2">Müşterilerimizden tarafımıza sıkça yöneltilen sorulardan bazıları</p>
+
+            <hr class="w-50px ml-0">
+
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+      <section class="section">
+          <div class="shadow-7">
+        <div class="container">
+          <header class="section-header">
+              <br>
+            <small>Sık Sorulan Sorular</small>
+            <h2>Sık Sorulan Sorular</h2>
+            <hr>
+            <p>Sorularınız mı var? Cevaplar burada. Bunların dışında bir sorunuz varsa, lütfen <strong>iletişime geçin.</strong></p>
+          </header>
+
+
+          <div class="row gap-y">
+            <div class="col-md-6">
+              <h5>Web Sitemi Ne Kadar Sürede Teslim Alabilirim?</h5>
+              <p>İçerik planlaması yapıldıktan sonra 2 hafta içerisinde web sitesi demo versiyonu ile teslim edilir. Daha sonraki süreçte yayında olan sitenin sizin tarafınızdan talep edilen revizyonları yerşine getirilir.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Ödeme Ne Şekilde Gerçekleşiyor?</h5>
+              <p>Proje başlamadan önce proje bedelinin yarısı; bitiminde ise geri kalan yarısı şeklinde gerçekleşiyor.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Tasarımdan Sonra Baskı Hizmeti Nasıl Oluyor?</h5>
+              <p>Tasarım süreci tamamlandıktan sonra; tarafınıza baskı için bir numune kutusu ulaştırılıyor. Numune kutusu içerisinden seçtiğiniz kalitedeki materyallerle tasarımlar baskıya gönderiliyor.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Web Sitemin Bulunduğu Sunucudaki Dosyalara Ulaşabiliyor Muyum?</h5>
+              <p>Web site dosyalarınız; sizin adınıza alınan sunucuda kullanıcı adı ve şifresi sizde olmak üzere tutulur. Bu nedenle, istediğiniz zaman sunucu dosyalarınıza ulaşabilir, istediğiniz kişilere incelettirebilirsiniz.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Daha Önceden Alınmış Domain/Alan Adımda Web Sitemi Görüntüleyebiliyor Muyum?</h5>
+              <p>Daha önceden tarafınızdan alınmış domain adresinin bilgilerini bize ulaştırmanız durumunda; web sitenizi bu domain adresinden yayınlayabiliyoruz.</p>
+            </div>
+
+
+            <div class="col-md-6">
+              <h5>Hangi Sunucuları Kullanıyorsunuz? Bu Sunucuların Güvenlik Durumu Nedir?</h5>
+              <p>Kullandığımız sunucular Google Cloud ve Amazon AWS sunucularıdır. Tüm delinme testlerinde en yüksek puanı almışlardır. Sunucu bazında güvenlik konusunda bir endişeniz olmasın.</p>
+            </div>
+          </div>
+
+        </div>
+          </div>
+      </section>
+
+
+
+
+
+
+
+{% include 'kurumsalysite/components/footer.html' %}

@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Avukatlar için Profesyonel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+    <meta name="keywords" content="avukatlık sitesi, avukatlara özel web tasarım, hukuk bürosu sitesi, hukukçulara özel web sitesi, hukukçulara özel kurumsal kimlik, avukat kertviziti, avukat antetli kağıt">
+
+    <title>KurumsaLy - Web Tasarım ve Kurumsal Kimlik</title>
+
+    <!-- Styles -->
+    <link href="{% static 'kurumsalysite/css/page.min.css' %}" rel="stylesheet">
+    <link href="{% static 'kurumsalysite/css/style.css' %}" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% static 'kurumsalysite/img/kurumsalyyazısızlogo.png' %}">
+    <link rel="icon" href="{% static 'kurumsalysite/img/kurumsalyyazısızlogo.png' %}">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy">
+    <meta property="og:description" content="Avukatlar için Profesyonel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+    <meta property="og:url" content="https://www.kurumsaly.com">
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left mr-4">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="{% url 'index' %}">
+            <img width="120" class="logo-dark" src="{% static 'kurumsalysite/img/kurumsalylogo.png' %}" alt="logo">
+            <img width="120" class="logo-light" src="{% static 'kurumsalysite/img/kurumsalylogobeyaz.png' %}" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar ml-auto">
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'index' %}active{% endif %}" href="{% url 'index' %}">Ana Sayfa</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'about' %}active{% endif %}" href="{% url 'about' %}">Hakkımızda</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'services' %}active{% endif %}" href="{% url 'services' %}">Hizmetler</a>
+              <a style="text-transform: none;" class="nav-link {% if nbar == 'muvekkil' %}active{% endif %}" href="{% url 'muvekkil' %}">Müvekkil Uygulaması</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'process' %}active{% endif %}" href="{% url 'process' %}">Süreç</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'faq' %}active{% endif %}" href="{% url 'faq' %}">Sık Sorulan Sorular</a>
+            <a style="text-transform: none;" class="nav-link {% if nbar == 'contact' %}active{% endif %}" href="{% url 'contact' %}">İletişim</a>
+          </nav>
+
+        </section>
+
+      </div>
+    </nav><!-- /.navbar -->

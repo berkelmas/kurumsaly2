@@ -1,0 +1,118 @@
+{% load static %}
+
+{% include 'kurumsalysite/components/header.html' %}
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url('{% static 'kurumsalysite/img/surecresim.jpeg' %}')">
+        <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #989898 0%, #4c8bb1 100%);"></div>
+        <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white" class="fw-200 mb-6">Süreç</h1>
+            <p style="color : white;" class="lead-2">Avukatlara Özel Yazılım Geliştirme ve Tasarım Süreci Nasıl İşler?</p>
+
+            <hr class="w-50px ml-0">
+
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Timeline
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="timeline" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Yazılım/Tasarım Süreci</h2>
+            <hr>
+            <p class="lead">Avukatlık Web Sitenizin Geliştirilmesi ve Kurumsal Kimlik Tasarımınızın Yapılması Süreci Nasıl İşliyor?</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+              <ol class="timeline">
+                <li class="timeline-item">
+                  <h5>Avukatımız İle İşe Başlamadan Önce Toplantı</h5>
+                  <p class="small-2"><time datetime="2017-02-08">Başlangıç</time></p>
+                  <p>Avukatımız ile toplantı yapılarak; istek, tarz ve öncelikleri göz önünde tutularak oluşturulacak web sitesi ve gerekiyorsa logo hazırlanması konusunda fikir edinilir. Bunun sonucunda, biz firmamızı tanıyarak hem tasarımımıza hem de sitemizin işlevselliğine yönelik çalışmalarımıza başlamış oluruz.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Avukatımızın Web Sitesinde Yer Almasını İstediği İçeriklerin Temini</h5>
+                  <p class="small-2"><time datetime="2017-08-17">İçerik Planlama</time></p>
+                  <p><img src="{% static 'kurumsalysite/img/iceriktemin.jpeg' %}" alt="..."></p>
+                  <p>Site yapımına başlanmadan önce, avukatımızın kendi web sitesinde yer almasını talep ettiği içerikler toplanır ve bunun yanında istenildiği takdirde bürosunun resimleri web sitesinde yer alması için gerekli çalışmalara başlanır.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Yapılacak İşlerin Sıraya Konulması ve Görev Paylaşımı</h5>
+                  <p class="small-2"><time datetime="2018-03-26">İş Bölümü</time></p>
+                  <p>KurumsaLy ekibi olarak; bir projeye başlamadan önce gerekli plan ve program yapılarak, kimin ne zaman ne işi yapacağı belirlenir ve bir işlem sırasına konulur. Bu şekilde avukatımız ile ne kadar sürede web sitesinin ve logonun yapılacağı bilgisi paylaşılır.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>Logo Tasarımı</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Logo</time></p>
+                    <p><img src="{% static 'kurumsalysite/img/logodizayn.jpeg' %}" alt="..."></p>
+                  <p>KurumsaLy olarak site yapımına başlamadan önce logo ve logoya bağlı tasarımlar yapılır. Avukatlık ofisimize 3 adet ilgisi doğrultusunda logo sunulur ve onayından sonra geri kalan tasarımlar ekibimizce yapılır.</p>
+                </li>
+
+
+                <li class="timeline-item">
+                  <h5>Tasarımların Baskıya Dönüştürülmesi</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Baskı Süreci</time></p>
+
+                  <p>KurumsaLy olarak site yapımına başlamadan önce logo ve logoya bağlı tasarımlar yapılır. Avukatlık ofisimize 3 adet ilgisi doğrultusunda logo sunulur ve onayından sonra geri kalan tasarımlar ekibimizce yapılır.</p>
+
+                </li>
+
+                  <li class="timeline-item">
+                  <h5>Web Sitesi Kodlanması</h5>
+                  <p class="small-2"><time datetime="2018-03-26">Yazılım</time></p>
+                      <p><img src="{% static 'kurumsalysite/img/yazilimsurec.jpeg' %}" alt="..."></p>
+                  <p>Tasarlanan logo ve tasarımlar ile birlikte web sitesi çizilir ve işlevselliği eklenerek demo versiyonumuz avukatımızın beğenisine sunulur. Beğenmediği kısımlar 1 haftalık revizyon süresince ekibimiz tarafından değiştirilir. Avukatımızın beğeneceği hale geldikten sonra ürün olarak firmamıza yönetim paneli şifresi ile birlikte teslim edilir.</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h5>0216/0850’li Hat Açılması</h5>
+                  <p class="small-2"><time datetime="2018-04-14">Sabit Hat</time></p>
+
+                  <p>İstenildiği takdirde 0216 veya 0850’li hatlar alınarak avukatımızın cep telefonuna yönlendirilir ve web sitesinin yönetim panelinden kimin aradığını takip edebileceği bir eklenti kurulur.</p>
+                </li>
+
+                </li>
+
+                  <li class="timeline-item">
+                  <h5>SEO Çalışması</h5>
+                  <p class="small-2"><time datetime="2018-03-26">Yazılım</time></p>
+                      <p><img src="{% static 'kurumsalysite/img/digitalmarketing.jpeg' %}" alt="..."></p>
+                  <p>İstenildiği takdirde avukatımızın faaliyet alanlarına özel olmak üzere web sitesinde SEO çalışması yapılır ve avukatımızın dijital pazarlama stratejisi birlikte belirlenir.</p>
+                </li>
+
+
+              </ol>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+{% include 'kurumsalysite/components/footer.html' %}
