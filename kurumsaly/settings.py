@@ -25,7 +25,7 @@ SECRET_KEY = '6^x=km323c4jirlwfs76_k49$ecwwp=wbh^2cswi&ez4z4t_+1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.kurumsaly.com']
+ALLOWED_HOSTS = ['134.209.255.218', 'www.kurumsaly.com', 'kurumsaly.com']
 
 
 # Application definition
@@ -77,11 +77,12 @@ WSGI_APPLICATION = 'kurumsaly.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'berkelmas11$kurumsaly2',
-        'USER': 'berkelmas11',
-        'PASSWORD': 'berk693693',
-        'HOST': 'berkelmas11.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'kurumsalydatabase',
+        'USER': 'kurumsalydatabaseuser',
+        'PASSWORD': 'berk693693693',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -123,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT='staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
