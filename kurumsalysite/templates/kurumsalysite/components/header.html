@@ -1,14 +1,130 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Avukatlar için Profesyonel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
-    <meta name="keywords" content="avukatlık sitesi, avukatlara özel web tasarım, hukuk bürosu sitesi, hukukçulara özel web sitesi, hukukçulara özel kurumsal kimlik, avukat kertviziti, avukat antetli kağıt">
 
-    <title>KurumsaLy - Web Tasarım ve Kurumsal Kimlik</title>
+    <meta name="google-site-verification" content="oo9iNItP4GZqlClVwXQsc9CltrPFR5FqIuA6zh_YJoY" />
+
+    {% if nbar == 'index' %}
+    <meta name="description" content="Avukatlar için Profesyonel Avukatlara Özel Web Sitesi, Avukatlık Kurumsal Kimlik Çalışmaları ve Dahası Tek Bir Pakette KurumsaLy'de">
+    <meta name="keywords" content="avukatlık sitesi, avukat web sitesi, avukat sitesi, avukatlara özel web tasarım, avukat sitesi, avukatlara özel web sitesi, avukatlara özel kurumsal kimlik, avukat kartviziti, avukat antetli kağıt, avukat web tasarım">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy">
+    <meta property="og:description" content="Avukatlar için Profesyonel Avukatlara Özel Web Sitesi, Avukatlık Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+    <meta property="og:url" content="https://www.kurumsaly.com">
+    <title>KurumsaLy - Avukatlara Özel Web Sitesi</title>
+
+{% elif nbar == 'about' %}
+
+    <meta name="description" content="KurumsaLy avukatlara; avukatlara özel web sitesi ve avukatlık kurumsal kimlik çalışmalarının yanında; avukatların dijital dünyada daha iyi yerlere gelmesini sağlayan avukatlara özel bir web ajansıdır.">
+    <meta name="keywords" content="kurumsaly, kurumsaly nedir, avukaltara özel web tasarım hakkında, avukatlık sitesi hakkında, kurumsaly ile avukatlara özel web sitesi, kurumsaly kimdir, kurumsaly nedir">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-Hakkımızda">
+    <meta property="og:description" content="KurumsaLy avukatlara özel web sayfası ve avukatlık özel kurumsal kimlik çalışmalarının yanında; dijital dünyada avukatlarımızı temsil eden ve daha iyi yerlere gelmeyi hedefleyen avukatlara özel web sitesi yapan bir web ajansıdır.">
+    <meta property="og:url" content="https://www.kurumsaly.com/hakkimizda/">
+    <title>KurumsaLy - Hakkımızda</title>
+
+{% elif nbar == 'services' %}
+
+
+    <meta name="description" content="Avukatlar için KurumsaLy Tarafından Sunulan Hizmetler Avukatlık Kurumsal Web Sitesi, Avukatlara Özel Avukatlık Kartvizitleri ve Dahasıdır.">
+    <meta name="keywords" content="avukatlara özel web sitesi, avukatlara özel kartvizit, avukatlara özel kurumsal kimlik, avukatlık kurumsal kimliği, avukatlık sitesi">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-Hizmetlerimiz">
+    <meta property="og:description" content="Avukatlar için Sunulan Profesyonel KurumsaLy Hizmetlerine Avukatlık Web Sitesi ve Avukatlara Özel Avukatlık Kurumsal Kimlik Çalışmaları Dahildir.">
+    <meta property="og:url" content="https://www.kurumsaly.com/hizmetlerimiz/">
+    <title>KurumsaLy - Hizmetlerimiz</title>
+
+{% elif nbar == 'articles' %}
+
+
+    <meta name="description" content="KurumsaLy olarak avukatlarımızın dijital dünyada avukat web siteleri ile nasıl yer almaları gerektiği konusunda hem gelişiyor hem de ilgili avukatlara avukatlık web siteleri hakkındaki yayınlarımızı sunuyoruz.">
+    <meta name="keywords" content="avukatlık sitesi makaleleleri, avukatlık sitesi nasıl olmalı, avukatlık web sitelerinde dikkat edilmesi gerekenler">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-Yayınlar">
+    <meta property="og:description" content="Avukatlara özel tasarlanan web siteleri nasıl olmalı ile ilgili avukat web sitesi yayınlarımız">
+    <meta property="og:url" content="https://www.kurumsaly.com/makaleler/">
+    <title>KurumsaLy - Yayınlarımız</title>
+
+{% elif nbar == 'process' %}
+
+    <meta name="description" content="Avukatlık Web sitesi tasarımı ve avukatlara özel avukatlık kurumsal kimlik çalışması süreci nasıl işler ve bu avukatlık süreci hangi aşamalardan geçerek tamamlanır?">
+    <meta name="keywords" content="avukatlık web sitesi süreci, avukatlara özel web sitesi yapımı, avukatlara özel kurumsal kimlik nasıl işler">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-Süreç">
+    <meta property="og:description" content="Avukatlara özel tasarım ve yazılımlı avukatlık web sitesi ve avukatlık kurumsal kimlik tasarımı süreci nasıl işler">
+    <meta property="og:url" content="https://www.kurumsaly.com/surec/">
+    <title>KurumsaLy - Süreç</title>
+
+{% elif nbar == 'faq' %}
+
+    <meta name="description" content="Avukatlara özel avukat web sitesi yapımı ve avukatlık kurumsal kimlik çalışmaları konusunda avukatların sıkça sorulan soruları">
+    <meta name="keywords" content="avukat web sitesi, avukatlık web sitesi sık sorulan sorular, avukat sitesi sıkça sorulan sorular">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-Sorular">
+    <meta property="og:description" content="Avukatlara özel web siteleri hakkında avukatlarca merak edilen sorular ve sıkça avukatların sorduğu sorular">
+    <meta property="og:url" content="https://www.kurumsaly.com/sorular/">
+    <title>KurumsaLy - Sık Sorulan Sorular</title>
+
+{% elif nbar == 'contact' %}
+
+
+    <meta name="description" content="Avukatlara özel avukatlık web sitesi ve avukatlara özel kurumsal kimlik çalışmaları için iletişime geçin">
+    <meta name="keywords" content="avukatlara özel site için iletişim, bize ulaşın, iletişime geç">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy-İletişim">
+    <meta property="og:description" content="Avukatlar için Profesyonel Avukatlara Özel Web Sitesi, Avukatlık Kurumsal Kimlik ve Dahası Tek Bir Pakette">
+    <meta property="og:url" content="https://www.kurumsaly.com/iletisim/">
+    <title>KurumsaLy - İletişim</title>
+
+{% elif nbar == 'articledetail' %}
+
+      <meta name="description" content="{{ makale.makale_meta_description }}">
+      <meta name="keywords" content="{{ makale.makale_meta_keywords }}">
+      <meta name="author" content="{{ makale.makale_author_seo }}">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy - {{ makale.makale_baslik }}">
+    <meta property="og:description" content="{{ makale.makale_meta_description }}">
+    <meta property="og:url" content="https://www.kurumsaly.com/{{ makale.makale_slug }}">
+    <title>KurumsaLy - {{ makale.makale_baslik }}</title>
+
+
+{% elif nbar == 'muvekkil' %}
+
+      <meta name="description" content="KurumsaLy ile avukatlara özel yazılımlı müvekkil takip uygulaması">
+      <meta name="keywords" content="müvekkil takip, avukatlara özel müvekkil takip">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="KurumsaLy - Müvekkil uygulaması">
+    <meta property="og:description" content="Avukatlara özel tasarlanmış ve yazılımı yapılmış müvekkiş takip uygulaması ile avukatlar artık müvekkillerine daha iyi hizmet sunuyor.">
+    <meta property="og:url" content="https://www.kurumsaly.com/muvekkil">
+    <title>KurumsaLy - Müvekkil Uygulaması</title>
+
+{% endif %}
+
+
+
+<style>
+
+  @media screen and (max-width : 700px){
+    .div-only-mobile{
+    visibility:hidden;
+    }
+  }
+
+</style>
+
 
     <!-- Styles -->
     <link href="{% static 'kurumsalysite/css/page.min.css' %}" rel="stylesheet">
@@ -18,10 +134,28 @@
     <link rel="apple-touch-icon" href="{% static 'kurumsalysite/img/kurumsalyyazısızlogo.png' %}">
     <link rel="icon" href="{% static 'kurumsalysite/img/kurumsalyyazısızlogo.png' %}">
 
-    <!--  Open Graph Tags -->
-    <meta property="og:title" content="KurumsaLy">
-    <meta property="og:description" content="Avukatlar için Profesyonel Web Sitesi, Kurumsal Kimlik ve Dahası Tek Bir Pakette">
-    <meta property="og:url" content="https://www.kurumsaly.com">
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '304973300158095');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=304973300158095&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
   </head>
 
   <body>

@@ -43,16 +43,27 @@ def articles(request):
     page = request.GET.get('page')
     articles = paginator.get_page(page)
 
-    return render(request, 'kurumsalysite/makaleler.html', {'articles' : articles})
+    return render(request, 'kurumsalysite/makaleler.html', {'nbar' : 'articles' ,'articles' : articles})
 
 
 
 
 def articledetay(request, makaleslug):
     makale = Makaleler.objects.get(makale_slug=makaleslug)
-    return render(request, 'kurumsalysite/makaledetay.html', {'makale' : makale})
+    return render(request, 'kurumsalysite/makaledetay.html', {'makale' : makale, 'nbar' : 'articledetail'})
 
 
 
 def muvekkil(request):
-    return render(request, 'kurumsalysite/muvekkil.html')
+    return render(request, 'kurumsalysite/muvekkil.html', {'muvekkil' : 'muvekkil', 'nbar' : 'muvekkil'})
+
+
+
+def not_found(request):
+    return render(request, 'kurumsalysite/404.html')
+
+
+
+
+
+

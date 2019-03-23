@@ -3,6 +3,8 @@ from django.db import models
 from ckeditor.fields import RichTextField
 from django.template.defaultfilters import slugify
 
+from unidecode import unidecode
+
 # Create your models here.
 class Contact(models.Model):
     iletisim_adsoyad = models.CharField(('Gönderenin Ad-Soyadı'), max_length=100)
@@ -34,7 +36,7 @@ class Makaleler(models.Model):
         return self.makale_baslik
 
     def save(self, *args, **kwargs):
-        self.makale_slug = slugify(self.makale_baslik)
+        self.makale_slug = slugify(unidecode(self.makale_baslik))
         super(Makaleler, self).save(*args, **kwargs)
 
     class Meta:

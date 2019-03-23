@@ -20,3 +20,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('kurumsalysite.urls'))
 ]
+
+
+handler404 = 'kurumsalysite.views.not_found'
+handler500 = 'kurumsalysite.views.not_found'
+handler403 = 'kurumsalysite.views.not_found'
+handler400 = 'kurumsalysite.views.not_found'
