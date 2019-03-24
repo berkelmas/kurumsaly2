@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, render_to_response
+from django.template import RequestContext
 from .models import Contact, Makaleler
 
 from django.core.paginator import Paginator
