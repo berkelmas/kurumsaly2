@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, render_to_response
 from .models import Contact, Makaleler
 
 from django.core.paginator import Paginator
@@ -60,7 +60,10 @@ def muvekkil(request):
 
 
 def not_found(request):
-    return render(request, 'kurumsalysite/404.html')
+    response = render_to_response('kurumsalysite/404.html', {}, context_instance=RequestContext(request))
+    response.status_code = 404
+
+    return response
 
 
 
