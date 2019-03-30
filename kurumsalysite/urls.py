@@ -10,7 +10,7 @@ urlpatterns = [
     path('surec/', process, name="process"),
     path('sorular/', faq, name="faq"),
     path('iletisim/', contact, name="contact"),
-    path('makaledetay/<slug:makaleslug>', articledetay, name="articledetail"),
+    path('<makaleslug>', articledetay, name="articledetail"),
     path('makaleler/', articles, name="articles"),
     path('muvekkil/', muvekkil, name="muvekkil"),
     path('sitemap.xml/', TemplateView.as_view(template_name='kurumsalysite/sitemap.xml', content_type='text/plain'), name="sitemap" ),
